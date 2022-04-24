@@ -4,8 +4,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script type="text/javascript" src="https://jaygreentree.github.io/cdn/chop/be538a5bb0"></script>
-    <script src="https://jaygreentree.github.io/cdn/chop/nr-1026.min.js"></script>
+
+
 
     <script type="text/javascript" async="" src="https://jaygreentree.github.io/cdn/chop/recaptcha__en.js"></script>
 
@@ -838,9 +838,7 @@
     <meta class="foundation-mq-large">
     <meta class="foundation-mq-medium">
     <meta class="foundation-mq-small">
-    <style></style>
     <meta class="foundation-mq-topbar">
-    <script type="text/javascript" src="https://jaygreentree.github.io/cdn/chop/w"></script>
 </head>
 
 <body>
@@ -852,10 +850,12 @@
                 <nav class="top-bar" data-topbar="" role="navigation">
                     <ul class="title-area">
                         <li class="name">
-                            <h1 class="brand"><img src="https://jaygreentree.github.io/cdn/chop/logo-transparent.png" alt=""></h1>
+                            <h1 class="brand">
+                                <!--    <img src="https://jaygreentree.github.io/cdn/chop/logo-transparent.png" alt=""> -->
+                            </h1>
                         </li>
                         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                        <li class="toggle-topbar menu-icon"><a href="https://web.archive.org/web/20170314193650/http://live./#"><span></span></a></li>
+                        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
                     </ul>
 
                     <section class="top-bar-section">
@@ -863,23 +863,22 @@
                         <ul class="right top-bar-actions">
 
                             <li class="link">
-                                <a id="give" href="https://web.archive.org/web/20170314193650/http:///online-giving/" target="_blank">Give</a>
-                            </li>
-
-
-                            <li class="link">
-                                <a href="https://web.archive.org/web/20170314193650/http:///who-we-are/features/about-us" target="_blank">About Us</a>
+                                <a id="give" href="" target="_blank">Give</a>
                             </li>
 
                             <li class="link">
-                                <a href="https://web.archive.org/web/20170314193650/http:///media/" target="_blank">Archives</a>
+                                <a href="" target="_blank">About Us</a>
                             </li>
 
                             <li class="link">
-                                <a class="co-sign-in-button" data-behavior="log-in" href="https://web.archive.org/web/20170314193650/http://live./#" id="login">Log in</a>
+                                <a href="" target="_blank">Archives</a>
+                            </li>
+
+                            <li class="link">
+                                <a class="co-sign-in-button" data-behavior="log-in" href="http://live./#" id="login">Log in</a>
                             </li>
                             <li>
-                                <a class="co-sign-up-button button blue" data-behavior="sign-up" href="https://web.archive.org/web/20170314193650/http://live./#" id="signup">Sign up</a>
+                                <a class="co-sign-up-button button blue" data-behavior="sign-up" href="http://live./#" id="signup">Sign up</a>
                             </li>
                             <li class="avatar">
                                 <div class="co-account" data-behavior="account"></div>
@@ -895,7 +894,6 @@
         <div class="row full-width prayer-tagline ">
             <div class="medium-12 columns text-center" role="content">
                 <div class="co-countdown-header" data-behavior="countdown_header">
-
                 </div>
             </div>
         </div>
@@ -929,7 +927,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="co-slides" data-behavior="slides"></div>
+                <div class="co-slides" data-behavior="slides">
+
+                </div>
             </div>
             <div class="medium-4 columns no-padding-left full-height hide-for-small-only">
                 <div class="co-widgets" data-behavior="widgets">
@@ -971,17 +971,12 @@
                     <ul class="co-widget-tabs" data-append-live-prayer-button="true" data-behavior="tabs">
 
                         <li class="co-chat-tab" data-behavior="chat-tab"> Chat </li>
-
-
                         <li class="co-schedule-default-tab" data-behavior="schedule-default-tab"> Schedule </li>
-
                         <li class="co-bible-tab co-active" data-behavior="bible-tab"> Bible </li>
-
-
                         <li class="co-custom-tab-tab" data-behavior="custom-tab-tab"> Contact Us </li>
 
                     </ul>
-                    <a class="more-widgets" href="#" data-behavior="tabs">
+                    <a class="more-widgets" href="#" data-behavior="tabs" style="display:none;">
                         <i class="co-icon-ellipsis-h"></i>
                     </a>
                 </div>
@@ -1123,7 +1118,7 @@
                 "videoOffset": 0,
                 "eventTimeId": 186851,
                 "chatStatus": "enabled",
-                "offlinePrayerUrl": "https://web.archive.org/web/20170314193650/https://tclive.wufoo.com/forms/how-can-we-help/",
+                "offlinePrayerUrl": "https://tclive.wufoo.com/forms/how-can-we-help/",
                 "prayerTagline": "Are you hurting? Need to talk to someone?",
                 "remoteLoginUrl": "",
                 "requestPrayerModal": true,
@@ -1150,48 +1145,6 @@
         $(document).on('click', gaSendPageView);
     </script>
     <div class="co-notifications" data-behavior="notifications"></div>
-    <script>
-        var gaTranslateRun = 0;
-        var checkForGoogleTranslateBar = function() {
-            var frame = $('.goog-te-banner-frame');
-            if (frame.length > 0) {
-                _track({
-                    category: 'site translation',
-                    label: 'loaded'
-                });
-
-                contents = frame.contents();
-                var resButton = contents.get(0).getElementById(':2.restore');
-                var cancelButton = contents.get(0).getElementById(':2.cancel');
-
-                contents.find('.goog-close-link').on('click', function() {
-                    _track({
-                        category: 'site translation',
-                        label: 'cancel'
-                    });
-                });
-                $(resButton).on('click', function() {
-                    _track({
-                        category: 'site translation',
-                        label: 'restore'
-                    });
-                });
-                $(cancelButton).on('click', function() {
-                    _track({
-                        category: 'site translation',
-                        label: 'cancel translation'
-                    });
-                });
-            } else {
-                if (gaTranslateRun < 30) {
-                    setTimeout(checkForGoogleTranslateBar, 500);
-                    gaTranslateRun += 1;
-                }
-            }
-        }
-        checkForGoogleTranslateBar();
-    </script>
-
 
     <script src="https://jaygreentree.github.io/cdn/chop/co_foundation-cdab6fba30fd8eab21e301cc8eade73a.js"></script>
 
@@ -1243,22 +1196,7 @@
             reflowWidgetTabs();
         });
     </script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://web.archive.org/web/20170314193650/https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-90020530-1', 'auto');
-        ga('send', 'pageview');
-    </script>
 
 </body>
 
