@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('https://web.archive.org/web/20170324025859im_/https://s3.amazonaws.com/icomoon.io/47870/ChurchOnlinePlatform/icomoon.eot?xo609f');
+  src:  url('https://web.archive.org/web/20170324025859im_/https://s3.amazonaws.com/icomoon.io/47870/ChurchOnlinePlatform/icomoon.eot?xo609f#iefix') format('embedded-opentype'),
+    url('https://web.archive.org/web/20170324025859im_/https://s3.amazonaws.com/icomoon.io/47870/ChurchOnlinePlatform/icomoon.woff2?xo609f') format('woff2'),
+    url('https://web.archive.org/web/20170324025859im_/https://s3.amazonaws.com/icomoon.io/47870/ChurchOnlinePlatform/icomoon.ttf?xo609f') format('truetype'),
+    url('https://web.archive.org/web/20170324025859im_/https://s3.amazonaws.com/icomoon.io/47870/ChurchOnlinePlatform/icomoon.woff?xo609f') format('woff'),
+    url('https://web.archive.org/web/20170324025859im_/https://s3.amazonaws.com/icomoon.io/47870/ChurchOnlinePlatform/icomoon.svg?xo609f#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="co-icon-"], [class*=" co-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.co-icon-angle-down:before {
+  content: "\e92e";
+}
+.co-icon-angle-left:before {
+  content: "\e92f";
+}
+.co-icon-angle-right:before {
+  content: "\e930";
+}
+.co-icon-angle-up:before {
+  content: "\e931";
+}
+.co-icon-xlarge-bars:before {
+  content: "\e92b";
+}
+.co-icon-xlarge-cog-o:before {
+  content: "\e92c";
+}
+.co-icon-xlarge-times:before {
+  content: "\e92d";
+}
+.co-icon-vol-resources-o:before {
+  content: "\e920";
+}
+.co-icon-vol-experience:before {
+  content: "\e921";
+}
+.co-icon-vol-experience-o:before {
+  content: "\e922";
+}
+.co-icon-vol-host-chat:before {
+  content: "\e923";
+}
+.co-icon-vol-host-chat-o:before {
+  content: "\e924";
+}
+.co-icon-vol-notifications:before {
+  content: "\e925";
+}
+.co-icon-vol-notifications-o:before {
+  content: "\e926";
+}
+.co-icon-vol-resources:before {
+  content: "\e927";
+}
+.co-icon-vol-resources-o2:before {
+  content: "\e928";
+}
+.co-icon-vol-slides:before {
+  content: "\e929";
+}
+.co-icon-vol-slides-o:before {
+  content: "\e92a";
+}
+.co-icon-logo-facebook:before {
+  content: "\e91e";
+}
+.co-icon-logo-twitter:before {
+  content: "\e91f";
+}
+.co-icon-video-play-circle:before {
+  content: "\e91d";
+}
+.co-icon-vr_goggles:before {
+  content: "\e905";
+}
+.co-icon-m-chats-o:before {
+  content: "\e90c";
+}
+.co-icon-m-chats:before {
+  content: "\e90d";
+}
+.co-icon-m-chat-volunteer-o:before {
+  content: "\e90a";
+}
+.co-icon-m-chat-volunteer:before {
+  content: "\e90b";
+}
+.co-icon-m-private-chat-o:before {
+  content: "\e917";
+}
+.co-icon-m-private-chat:before {
+  content: "\e918";
+}
+.co-icon-m-bell-o:before {
+  content: "\e902";
+}
+.co-icon-m-bell:before {
+  content: "\e903";
+}
+.co-icon-m-calendar-o:before {
+  content: "\e904";
+}
+.co-icon-m-calendar:before {
+  content: "\e8f8";
+}
+.co-icon-m-note-o:before {
+  content: "\e912";
+}
+.co-icon-m-note:before {
+  content: "\e915";
+}
+.co-icon-m-note-volunteer-o:before {
+  content: "\e913";
+}
+.co-icon-m-note-volunteer:before {
+  content: "\e914";
+}
+.co-icon-m-chat-control:before {
+  content: "\e909";
+}
+.co-icon-m-chat-control-strike:before {
+  content: "\e908";
+}
+.co-icon-m-camera-control:before {
+  content: "\e907";
+}
+.co-icon-m-camera-control-strike:before {
+  content: "\e906";
+}
+.co-icon-m-trash:before {
+  content: "\e919";
+}
+.co-icon-m-microphone-strike:before {
+  content: "\e911";
+}
+.co-icon-m-paper-airplane:before {
+  content: "\e916";
+}
+.co-icon-m-ellipses:before {
+  content: "\e90e";
+}
+.co-icon-m-ellipses-vertical:before {
+  content: "\e91c";
+}
+.co-icon-m-hamburger:before {
+  content: "\e90f";
+}
+.co-icon-m-grabber-ew:before {
+  content: "\e910";
+}
+.co-icon-times-large:before {
+  content: "\e91a";
+}
+.co-icon-large-angle-down:before {
+  content: "\e91b";
+}
+.co-icon-calendar-small:before {
+  content: "\e603";
+}
+.co-icon-notepad:before {
+  content: "\e602";
+}
+.co-icon-copy_to_clipboard:before {
+  content: "\1f323";
+}
+.co-icon-chat:before {
+  content: "\e604";
+}
+.co-icon-calendar:before {
+  content: "\e00d";
+}
+.co-icon-admin:before {
+  content: "\e00c";
+}
+.co-icon-chat-off:before {
+  content: "\e00b";
+}
+.co-icon-chat-on:before {
+  content: "\e00a";
+}
+.co-icon-cog-2:before {
+  content: "\e009";
+}
+.co-icon-help:before {
+  content: "\e008";
+}
+.co-icon-invite:before {
+  content: "\e007";
+}
+.co-icon-login:before {
+  content: "\e006";
+}
+.co-icon-logout:before {
+  content: "\e005";
+}
+.co-icon-refresh:before {
+  content: "\e004";
+}
+.co-icon-slides:before {
+  content: "\e003";
+}
+.co-icon-text-align:before {
+  content: "\e002";
+}
+.co-icon-user-add:before {
+  content: "\e001";
+}
+.co-icon-user:before {
+  content: "\e000";
+}
+.co-icon-church-online-platform-logo:before {
+  content: "\e901";
+}
+.co-icon-alarm-clock:before {
+  content: "\e900";
+}
+.co-icon-external-link:before {
+  content: "\e600";
+}
+
+
+/*
+     FILE ARCHIVED ON 02:58:59 Mar 24, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:32:32 Apr 24, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 127.162
+  exclusion.robots: 0.11
+  exclusion.robots.policy: 0.102
+  RedisCDXSource: 0.627
+  esindex: 0.01
+  LoadShardBlock: 102.909 (3)
+  PetaboxLoader3.datanode: 61.328 (5)
+  CDXLines.iter: 20.272 (3)
+  load_resource: 193.985 (2)
+  PetaboxLoader3.resolve: 136.351 (2)
+*/
