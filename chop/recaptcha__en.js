@@ -1,15 +1,3 @@
-var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
-if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
-{
-  let window = _____WB$wombat$assign$function_____("window");
-  let self = _____WB$wombat$assign$function_____("self");
-  let document = _____WB$wombat$assign$function_____("document");
-  let location = _____WB$wombat$assign$function_____("location");
-  let top = _____WB$wombat$assign$function_____("top");
-  let parent = _____WB$wombat$assign$function_____("parent");
-  let frames = _____WB$wombat$assign$function_____("frames");
-  let opener = _____WB$wombat$assign$function_____("opener");
-
 (function(){for(var f,aa=function(a,b){function c(){}c.prototype=b.prototype;a.prototype=new c;a.prototype.constructor=a;for(var d in b)if(Object.defineProperties){var e=Object.getOwnPropertyDescriptor(b,d);e&&Object.defineProperty(a,d,e)}else a[d]=b[d]},ba="function"==typeof Object.defineProperties?Object.defineProperty:function(a,b,c){if(c.get||c.set)throw new TypeError("ES3 does not support getters and setters.");a!=Array.prototype&&a!=Object.prototype&&(a[b]=c.value)},ca="undefined"!=typeof window&&window===
 this?this:"undefined"!=typeof global&&null!=global?global:this,da=function(){da=function(){};ca.Symbol||(ca.Symbol=ea)},fa=0,ea=function(a){return"jscomp_symbol_"+(a||"")+fa++},ha=function(){da();var a=ca.Symbol.iterator;a||(a=ca.Symbol.iterator=ca.Symbol("iterator"));"function"!=typeof Array.prototype[a]&&ba(Array.prototype,a,{configurable:!0,writable:!0,value:function(){return ga(this)}});ha=function(){}},ga=function(a){var b=0;return ia(function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}})},
 ia=function(a){ha();a={next:a};a[ca.Symbol.iterator]=function(){return this};return a},ja=function(a){ha();var b=a[Symbol.iterator];return b?b.call(a):ga(a)},ka=ca,la=["Array","prototype","fill"],ma=0;ma<la.length-1;ma++){var na=la[ma];na in ka||(ka[na]={});ka=ka[na]}var oa=la[la.length-1],pa=ka[oa],qa=pa?pa:function(a,b,c){var d=this.length||0;0>b&&(b=Math.max(0,d+b));if(null==c||c>d)c=d;c=Number(c);0>c&&(c=Math.max(0,d+c));for(b=Number(b||0);b<c;b++)this[b]=a;return this};
@@ -408,26 +396,4 @@ Gq(a.jb);a.jb.selected=!1;F(a.jb.element,"rc-imageselect-dynamic-selected");N(th
 Eq.prototype.Za=function(){if(!qq.prototype.Za.call(this)){for(var a=ja(this.ed),b=a.next();!b.done;b=a.next()){var c=this.Hf;if(null!==c&&b.value in c)return!1}Z(this,!0,J("rc-imageselect-error-dynamic-more",void 0))}return!0};
 Eq.prototype.Db=function(a){-1==Sb(this.ed,Sb(this.oa.D.pa.Cb,a))&&(Z(this,!1),a.selected||(++this.oa.D.pa.gd,a.selected=!0,this.Dd&&Oh(a.element,"transition","opacity "+(this.Dd+1E3)/1E3+"s ease"),E(a.element,"rc-imageselect-dynamic-selected"),ec(this.fd,Sb(this.oa.D.pa.Cb,a)),rq(this)))};var Fq=function(a){var b=[];D(a.oa.D.pa.Cb,function(a,d){a.selected&&-1==Sb(this.ed,d)&&b.push(d)},a);return b};var zq=function(a){switch(a){case "default":return new Wp;case "nocaptcha":return new iq;case "imageselect":return new Xp;case "tileselect":return new Xp("tileselect");case "dynamic":return new Eq;case "audio":return new Tp;case "text":return new kq;case "multicaptcha":return new Bq;case "canvas":return new pq;case "coref":return new cq;case "prepositional":return new hq}};var Hq=function(a){M.call(this,a);this.V=null;this.Kh=ag("recaptcha-token")};y(Hq,M);Hq.prototype.ea=function(){return this.Kh.value};Hq.prototype.be=function(a){this.Kh.value=a};Hq.prototype.W=function(){return this.V?this.V.fb.clone():new z(0,0)};var Iq=function(a){ro.tb().init(a.Mc());var b=new Hq;b.render(document.body);var c=new Bo,c=new $o(c,a,new Tn,new Ic);this.wd=new tq(b,c);this.wd.init(U(a,1))};Ga("recaptcha.frame.embeddable.Main.init",function(a){a=new cp(mj(a));new Iq(a)});var Jq=function(a){ro.tb().init(a.Mc());zo("JS_THIRDEYE")&&$l();var b=new Hq;b.render(document.body);var c=new Bo;a=new $o(c,a,new Tn,new fk(ig().location.hash.slice(1)));this.wd=new tq(b,a)};Ga("recaptcha.frame.Main.init",function(a){a=new cp(mj(a));(new Jq(a)).wd.init(U(a,1))});}).call(this);
 
-
 }
-/*
-     FILE ARCHIVED ON 19:32:20 Mar 14, 2017 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 03:32:38 Apr 24, 2022.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 67.422
-  exclusion.robots: 0.096
-  exclusion.robots.policy: 0.088
-  RedisCDXSource: 0.927
-  esindex: 0.008
-  LoadShardBlock: 32.12 (3)
-  PetaboxLoader3.datanode: 34.123 (4)
-  CDXLines.iter: 13.29 (3)
-  load_resource: 97.742
-  PetaboxLoader3.resolve: 76.896
-*/
