@@ -220,9 +220,10 @@
         </div>
     </footer>
 
-    <script src="/chop/pubnub-3.7.2.min.js"></script>
-    <script src="/chop/leaflet.js"></script>
-    <script src="/chop/web.js"></script>
+
+    <script src="//web.archive.org/web/20170314193650js_/http://cdn.pubnub.com/pubnub-3.7.2.min.js"></script>
+    <script src="//web.archive.org/web/20170314193650js_/http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <script src="https://web.archive.org/web/20170314193650js_/http://d3s2h8jofymiga.cloudfront.net/assets/web-d44354b98442e370e61d2f81e798e408.js"></script>
     <script>
         ChopFrontend.init({
             noEvents: false,
@@ -258,22 +259,22 @@
                 "description": "",
                 "duration": 105,
                 "enabled": true,
-                "speaker": "Speaker Name",
+                "speaker": "Pastor Debbie Salters",
                 "title": "The Road to R.E.C.O.V.E.R.Y.",
                 "vrSimulated": null,
                 "sphericalVideo": null,
                 "eventNotes": "",
                 "volunteerNotes": "",
-                "facebookMessage": "Join us for worship at , We are live streaming online.",
-                "twitterMessage": "Join us for worship at , We are live streaming online.",
-                "emailMessage": "Join us for worship at , We are live streaming online.",
+                "facebookMessage": "Join us for worship at Thursday Church, We are live streaming online.",
+                "twitterMessage": "Join us for worship at Thursday Church, We are live streaming online.",
+                "emailMessage": "Join us for worship at Thursday Church, We are live streaming online.",
                 "socialLink": "",
                 "slidesPaused": true,
                 "enabledFeatures": ["chat", "custom_tab"],
                 "customTab": {
                     "id": 65,
                     "title": "Contact Us",
-                    "content": "",
+                    "content": "\u003ciframe onload=\"javascript:parent.scrollTo(0,0);\" height=\"663\" allowTransparency=\"true\" frameborder=\"0\" scrolling=\"no\" style=\"width:100%;border:none\" src=\"http://forms.thursdaychurch.org/embed.php?id=10819\" title=\"Contact Us\"\u003e\u003c/iframe\u003e",
                     "sort_order": null,
                     "visible": true,
                     "permanent": false,
@@ -286,12 +287,12 @@
                 "videoOffset": 0,
                 "eventTimeId": 186851,
                 "chatStatus": "enabled",
-                "offlinePrayerUrl": "https://tclive.wufoo.com/forms/how-can-we-help/",
+                "offlinePrayerUrl": "https://web.archive.org/web/20170314193650/https://tclive.wufoo.com/forms/how-can-we-help/",
                 "prayerTagline": "Are you hurting? Need to talk to someone?",
                 "remoteLoginUrl": "",
                 "requestPrayerModal": true,
                 "isLive": false,
-                "eventStartTime": "2022-04-27T22:00:00Z"
+                "eventStartTime": "2017-03-16T22:40:00Z"
             }
         });
 
@@ -311,6 +312,99 @@
         };
 
         $(document).on('click', gaSendPageView);
+    </script>
+    <script>
+        var gaTranslateRun = 0;
+        var checkForGoogleTranslateBar = function() {
+            var frame = $('.goog-te-banner-frame');
+            if (frame.length > 0) {
+                _track({
+                    category: 'site translation',
+                    label: 'loaded'
+                });
+
+                contents = frame.contents();
+                var resButton = contents.get(0).getElementById(':2.restore');
+                var cancelButton = contents.get(0).getElementById(':2.cancel');
+
+                contents.find('.goog-close-link').on('click', function() {
+                    _track({
+                        category: 'site translation',
+                        label: 'cancel'
+                    });
+                });
+                $(resButton).on('click', function() {
+                    _track({
+                        category: 'site translation',
+                        label: 'restore'
+                    });
+                });
+                $(cancelButton).on('click', function() {
+                    _track({
+                        category: 'site translation',
+                        label: 'cancel translation'
+                    });
+                });
+            } else {
+                if (gaTranslateRun < 30) {
+                    setTimeout(checkForGoogleTranslateBar, 500);
+                    gaTranslateRun += 1;
+                }
+            }
+        }
+        checkForGoogleTranslateBar();
+    </script>
+
+
+    <script src="//web.archive.org/web/20170314193650js_/http://d3s2h8jofymiga.cloudfront.net/assets/co_foundation-cdab6fba30fd8eab21e301cc8eade73a.js"></script>
+
+    <script type="text/javascript">
+        app.on('event:live', function() {
+            $('.co-chat-tab').trigger('click');
+        });
+
+
+        window.reflowWidgetTabs = function() {
+            var container, index, items, newTabs, tabContainer, tabs, reflowTabs, willOverflow;
+
+            container = $(".more-widgets");
+            tabContainer = $(".co-widget-tabs");
+            reflowTabs = [];
+
+            container.find("ul li").detach().appendTo(tabContainer);
+            container.hide().find("ul").remove();
+            tabContainer.removeClass('has-more-widgets');
+            tabContainer.find('li').each(function() {
+                if (this.offsetTop > 0) {
+                    willOverflow = true;
+                }
+            });
+
+            if (willOverflow) {
+                tabContainer.addClass('has-more-widgets');
+            }
+
+            tabContainer.find('li').each(function() {
+                if (this.offsetTop > 0) {
+                    reflowTabs.push(this);
+                }
+            });
+            if (reflowTabs.length > 0) {
+                newTabs = $("<ul>").append(reflowTabs);
+                container.show().append(newTabs);
+            }
+        };
+
+        var lazyReflow = _.debounce(reflowWidgetTabs, 300);
+        $(window).resize(lazyReflow)
+        $(function() {
+            setTimeout(function() {
+                reflowWidgetTabs();
+            }, 0);
+        });
+        app.on('private-chat:add private-chat:remove', function() {
+            reflowWidgetTabs();
+        });
     </script>
     <div class="co-notifications" data-behavior="notifications"></div>
 
