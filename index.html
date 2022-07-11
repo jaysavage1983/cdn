@@ -395,60 +395,8 @@
             reflowWidgetTabs();
         });
     </script>
-    <div class="co-notifications" data-behavior="notifications">
-        Welcome to the stream.
-    </div>
+    <div class="co-notifications" data-behavior="notifications"></div>
 
-    <script src="https://web.archive.org/web/20170314193650js_/http://d3s2h8jofymiga.cloudfront.net/assets/co_foundation-cdab6fba30fd8eab21e301cc8eade73a.js"></script>
-
-    <script type="text/javascript">
-        app.on('event:live', function() {
-            $('.co-chat-tab').trigger('click');
-        });
-
-
-        window.reflowWidgetTabs = function() {
-            var container, index, items, newTabs, tabContainer, tabs, reflowTabs, willOverflow;
-
-            container = $(".more-widgets");
-            tabContainer = $(".co-widget-tabs");
-            reflowTabs = [];
-
-            container.find("ul li").detach().appendTo(tabContainer);
-            container.hide().find("ul").remove();
-            tabContainer.removeClass('has-more-widgets');
-            tabContainer.find('li').each(function() {
-                if (this.offsetTop > 0) {
-                    willOverflow = true;
-                }
-            });
-
-            if (willOverflow) {
-                tabContainer.addClass('has-more-widgets');
-            }
-
-            tabContainer.find('li').each(function() {
-                if (this.offsetTop > 0) {
-                    reflowTabs.push(this);
-                }
-            });
-            if (reflowTabs.length > 0) {
-                newTabs = $("<ul>").append(reflowTabs);
-                container.show().append(newTabs);
-            }
-        };
-
-        var lazyReflow = _.debounce(reflowWidgetTabs, 300);
-        $(window).resize(lazyReflow)
-        $(function() {
-            setTimeout(function() {
-                reflowWidgetTabs();
-            }, 0);
-        });
-        app.on('private-chat:add private-chat:remove', function() {
-            reflowWidgetTabs();
-        });
-    </script>
 
 
 </body>
