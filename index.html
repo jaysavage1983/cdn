@@ -19,11 +19,11 @@
 
     <link href="favicon.ico" rel="icon" type="image/png" />
 
-    <link href="/chop/style.css" media="screen" rel="stylesheet" />
-    <link href="/chop/app.css" media="screen" rel="stylesheet" />
-    <link href="/chop/leaflet.css" media="screen" rel="stylesheet" />
-    <link href="/chop/co_foundation.css" media="screen" rel="stylesheet" />
-    <link href="/chop/custom.css" media="screen" rel="stylesheet" />
+    <link href="./chop/style.css" media="screen" rel="stylesheet" />
+    <link href="./chop/app.css" media="screen" rel="stylesheet" />
+    <link href="./chop/leaflet.css" media="screen" rel="stylesheet" />
+    <link href="./chop/co_foundation.css" media="screen" rel="stylesheet" />
+    <link href="./chop/custom.css" media="screen" rel="stylesheet" />
 
     <meta class="foundation-data-attribute-namespace" />
     <meta class="foundation-mq-xxlarge" />
@@ -68,14 +68,14 @@
                             </li>
 
                             <li class="link">
-                                <a class="co-sign-in-button" data-behavior="log-in" href="#" id="login">Log in</a
+                                <a class="co-sign-in-button" data-behavior="log-in" href="javascript:void();" id="login">Log in</a
                   >
                 </li>
                 <li>
                   <a
                     class="co-sign-up-button button blue"
                     data-behavior="sign-up"
-                    href="#"
+                    href="javascript:void();"
                     id="signup"
                     >Sign up</a
                   >
@@ -169,8 +169,8 @@
         <div class="row full-width event-details">
             <div class="medium-7 columns">
                 <div>
-                    <h2>Livestream Title <small>Livestream Speaker</small></h2>
-                    <p>Livestream Description</p>
+                    <h2> <small></small></h2>
+                    <p></p>
                 </div>
                 <div class="share">
                     <h6>Share</h6>
@@ -232,9 +232,9 @@
 
         <div class="co-notifications" data-behavior="notifications"></div>
 
-        <script src="//web.archive.org/web/20170314193650js_/http://cdn.pubnub.com/pubnub-3.7.2.min.js"></script>
-        <script src="//web.archive.org/web/20170314193650js_/http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-        <script src="https://web.archive.org/web/20170314193650js_/http://d3s2h8jofymiga.cloudfront.net/assets/web-d44354b98442e370e61d2f81e798e408.js"></script>
+        <script src="./chop/pubnub-3.7.2.min.js"></script>
+        <script src="./chop/leaflet.js"></script>
+        <script src="./chop/web.js"></script>
         <script>
             ChopFrontend.init({
                 noEvents: false,
@@ -285,7 +285,7 @@
                     customTab: {
                         id: 65,
                         title: "Contact Us",
-                        content: '\u003ciframe onload="javascript:parent.scrollTo(0,0);" height="663" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="http://forms.thursdaychurch.org/embed.php?id=10819" title="Contact Us"\u003e\u003c/iframe\u003e',
+                        content: '<iframe onload="javascript:parent.scrollTo(0,0);" height="663" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="http://forms.thursdaychurch.org/embed.php?id=10819" title="Contact Us"></iframe>',
                         sort_order: null,
                         visible: true,
                         permanent: false,
@@ -298,7 +298,7 @@
                     videoOffset: 0,
                     eventTimeId: 186851,
                     chatStatus: "enabled",
-                    offlinePrayerUrl: "https://web.archive.org/web/20170314193650/https://tclive.wufoo.com/forms/how-can-we-help/",
+                    offlinePrayerUrl: "https://tclive.wufoo.com/forms/how-can-we-help/",
                     prayerTagline: "Having trouble with the stream?",
                     remoteLoginUrl: "",
                     requestPrayerModal: true,
@@ -366,7 +366,7 @@
             checkForGoogleTranslateBar();
         </script>
 
-        <script src="//web.archive.org/web/20170314193650js_/http://d3s2h8jofymiga.cloudfront.net/assets/co_foundation-cdab6fba30fd8eab21e301cc8eade73a.js"></script>
+        <script src="./chop/co_foundation.js"></script>
 
         <script type="text/javascript">
             app.on("event:live", function() {
