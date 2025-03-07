@@ -1,0 +1,1790 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, nav ul, nav li, aside ul, aside li, header ul, header li, footer ul, footer li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+nav ol, nav ul, aside ol, aside ul, header ol, header ul, footer ol, footer ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+a img {
+	border:none;
+}
+
+code, pre, tt {
+	font:100% "Andale Mono", "Lucida Console", "Courier New", monospace;
+	margin:1em 0;
+}
+small {
+	font-size:85%;
+	font-weight:normal;
+}
+big {
+	font-size:115%;
+}
+sup {
+	font-size:smaller;
+	vertical-align:.5em;
+	line-height:1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+	line-height:1em;
+	margin:0 0 .25em;
+}
+h1, h2, h3 {
+	font-weight:bold;
+}
+h1 {
+	font-size:2.1em;
+	padding:.25em 0;
+}
+h2 {
+	font-size:1.5em;
+}
+h3 {
+	font-size:1.2em;
+}
+h4 {
+	font-size:1.1em;
+}
+h5, h6 {
+	font-size:1em;
+}
+
+input, textarea {
+	font:100% Helvetica, Arial, sans-serif;
+}
+
+dt {
+	margin:.5em 0 0;
+}
+dd {
+	margin:.25em 0 .5em 2.5em;
+}
+
+table {
+	border-spacing: 0;
+}
+
+/*
+ Client:Church.tv
+ Description:Global style definitions
+ Author:Electric Pulp
+ Author URI:http://electricpulp.com/
+ */
+html {
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.2em;
+	color: #a8a7a7; /**/
+	margin: 0;
+	padding: 0;
+	background: #161e1c;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.theme-buttons-background-color {
+	background-color: #7ea8d5;
+}
+
+.theme-buttons-background-color-text {
+	color: #7ea8d5;
+}
+
+.theme-buttons-over-color {
+	background-color: #fff;
+}
+
+.theme-buttons-text-color {
+	color: #161e1c;
+}
+
+.theme-content-background-color {
+	background-color: #518670;
+}
+
+.theme-content-link-color {
+	color: #7ba3cf;
+}
+
+.theme-content-text-color {
+	color: #293330;
+}
+
+.theme-header-background-color {
+	background-color: #161e1c;
+}
+
+.theme-header-link-color {
+	color: #a8a7a7;
+}
+
+.theme-header-over-color {
+	color: #fff;
+}
+
+.theme-header-text-color {
+	color: #676767;
+}
+
+.theme-interface-background-color {
+	background: #14211c;
+	background: rgba(22, 30, 28, .7); /* FF3+, Saf3+, Opera 10.10+, Chrome */ /* interface bg 1 */
+}
+
+.theme-interface-link-color {
+	color: #fff;
+}
+
+.theme-interface-text-color {
+	color: #a9a9a9;
+}
+
+/* Flash Timezone Map Colors */
+.theme-map-background-color {
+	background-color: #ffffff;
+	display: none;
+}
+
+.theme-map-zone-color {
+	background-color: #a3a86e;
+	display: none;
+}
+
+.theme-map-selected {
+	background-color: #7ea8d5;
+	display: none;
+}
+
+/* END: Flash Timezone Map Colors */
+header, nav, article, figure, aside, footer {
+	display: block;
+}
+
+time {
+	display: inline;
+}
+
+a {
+	color: #7ba3cf; /* primary link color */
+}
+
+nav a {
+	text-decoration: none;
+}
+
+.bttn {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	border: 0;
+	padding: 6px;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 600;
+	text-decoration: none;
+	background: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/bg-bttn.png) repeat-x 0 100% #7ea8d5;
+	color: #161e1c !important;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header {
+	height: 40px;
+	background: #161e1c;
+	position: relative;
+	z-index: 20;
+}
+
+#header.volunteer {
+	padding-top: 40px;
+}
+
+#logo {
+}
+
+#header h2.location-name {
+	float: left;
+	margin: 8px 0 0;
+}
+
+#header .container img {
+	float: left;
+}
+
+#header-content-overlay {
+	position: absolute;
+	width: 430px;
+	padding: 10px;
+	background-color: #161E1C;
+	right: 10px;
+	top: 75px;
+	z-index: 100;
+}
+
+#header-content-overlay .header {
+	color: white;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+#header-content-overlay .container {
+	background-color: white;
+	overflow: hidden;
+	width: 390px;
+	color: #555;
+	padding: 20px;
+	font-size: 13px;
+}
+
+#header-content-overlay .container ul {
+	list-style: inherit;
+	list-style-position: inside;
+}
+
+#navigation {
+	float: right;
+}
+
+#navigation ul {
+}
+
+#navigation ul li {
+	float: left;
+	display: inline;
+	margin-left: 25px;
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 40px;
+}
+
+#navigation ul li a {
+	color: #a8a7a7;
+	text-decoration: none;
+}
+
+#navigation ul li a:hover {
+	color: #fff;
+}
+
+#content {
+	height: 600px;
+	padding: 0;
+	color: #293330; /* primary color 1 */
+	background: #161e1c url(/web/20101228233438im_/http://westside-family.churchonline.org/img/bg-content.jpg) 0 0; /* primary bg */
+	position: relative;
+	z-index: 10;
+}
+
+#content div.messages {
+margin: 0 auto;
+width: 960px;
+position: absolute;
+text-align: center;
+z-index: 39;
+}
+
+#content div.message {
+  display: inline-block;
+  position: relative;
+	background: #d3d3d3;
+	font-size: .9em;
+	margin: 0px auto;
+	padding: 8px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	width: auto;
+	top: 12px;
+	z-index: 40;
+}
+
+#content .message.error {
+	background: #c93e3e;
+	color: white;
+	text-align: right;
+}
+
+#overlay .message.error {
+	color: red;
+}
+
+#content .message.success {
+	background: #87d087;
+	color: black;
+}
+
+#content .container {
+	padding: 20px 0;
+	position: relative;
+}
+
+#account-bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 11px;
+	color: #293330; /* primary color 1 */
+	padding: 2px 0 0;
+	z-index: 10;
+}
+
+#account-bar a {
+	color: #293330; /* primary color 1 */
+	margin: 0 5px;
+}
+
+#account-bar .styled {
+	border: 1px solid;
+	margin-right: 5px;
+	font-size: 13px;
+}
+
+#account-bar .smaller {
+	padding: 3px 6px;
+	font-size: 10px;
+}
+
+#content h1 {
+	margin: 0;
+	padding: 0;
+	letter-spacing: -1px;
+}
+
+#watch {
+	float: left;
+	display: inline;
+	width: 480px;
+	position: relative;
+	margin-top: 50px;
+}
+
+#watch .site-title {
+	overflow: hidden;
+	position: absolute;
+	margin-top: -50px;
+	padding-bottom: 5px;
+}
+
+#watch h2 {
+	font-size: .85em;
+	font-weight: normal;
+}
+
+#watch .quality {
+	position: absolute;
+	top: 36px;
+	right: 0;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+#watch .quality a { /* primary color 1 */
+	color: #293330;
+	text-decoration: none;
+}
+
+#video-area {
+	margin-bottom: 1px;
+}
+
+#video-box {
+	width: 480px;
+	height: 270px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+#video-box .bttn-play { /* 70 x 180 */
+	position: absolute;
+	top: 108px;
+	left: 150px;
+}
+
+#video-quality {
+	position: absolute;
+	margin: -30px 0 0 0;
+	left: 7px;
+}
+
+.interface {
+	padding: 6px;
+	margin: 1px 0 0;
+	overflow: auto;
+	color: #fff;
+	background: #14211c; /* interface bg color 1 */ /* NOT CONSISTENT */
+	background: rgba(22, 30, 28, .7); /* FF3+, Saf3+, Opera 10.10+, Chrome */ /* interface bg 1 */
+	font-size: .8em;
+	color: #a9a9a9; /* interface text color 1 */
+}
+
+.interface.first {
+	margin: 0;
+}
+
+#recent-conversation.interface {
+	overflow: hidden;
+}
+
+#sidebar .interface {
+	padding: 20px;
+}
+
+.interface strong {
+	color: #fff; /* interface text color 2 */
+}
+
+#video-sub {
+	width: 480px;
+	height: 240px;
+	padding: 0;
+	overflow: hidden;
+}
+
+#video-sub .more {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+#video-sub .more .column {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#video-sub .more .column .body {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	height: 70px;
+	width: 160px;
+}
+
+#video-sub .more .column .body p {
+	margin-bottom: 5px;
+}
+
+#video-sub .more .column .body .sharing-options {
+	margin: 0;
+	padding: 0;
+}
+
+#video-sub .more .column .body .sharing-options li {
+	float: left;
+	list-style-type: none;
+	margin-right: 10px;
+}
+
+#language {
+	text-decoration: none;
+}
+
+#language-choices {
+	position: absolute;
+	bottom: -36px;
+	right: 6px;
+}
+
+#language-choices li {
+	float: left;
+	display: inline;
+	font-size: 11px;
+	margin-left: 2em;
+}
+
+#language-choices li a {
+	text-decoration: none;
+}
+
+#sidebar .interface h2 {
+	font-weight: normal;
+	font-size: 2em;
+}
+
+#sidebar .interface h3 {
+	font-weight: normal;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+#offline-map-container {
+	padding: 15px;
+	position: absolute;
+	margin-top: -40px;
+}
+
+div#offline-map {
+	background-color: white;
+	margin: 20px 10px 10px 10px;
+	padding: 10px;
+	width: 400px;
+}
+
+#offline-map-container .close-x {
+	top: 5px;
+	right: 5px;
+}
+
+#next-up h2, #next-up h3 {
+	display: inline;
+	margin-right: 3px;
+}
+
+#next-up h2 {
+	font-size: 1.4em !important;
+}
+
+.counter-container {
+	margin-top: 20px;
+	color: white;
+}
+
+.counter {
+	float: left;
+	padding: 10px 5px 8px 6px;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #161E1C;
+	margin-right: 1px;
+}
+
+.counter .numbers {
+	height: 20px;
+	font-size: 20px;
+	line-height: 1em;
+	margin-right: 2px;
+}
+
+/** Header Countdown Styles **/
+.counter-container.small {
+	display: inline;
+}
+.counter-container.small .counter {
+	padding: 10px 0 0 0;
+	background-color: transparent;
+}
+.counter-container.small .counter.title {
+  margin-left: 10px;
+}
+.counter-container.small .counter .numbers {
+	height: 12px;
+	font-size: 12px;
+	margin-left: 2px;
+	margin-right: 0;
+}
+.counter-container.small .counter span.getlang {
+	font-size: 10px;
+}
+
+#next-up .t-days {
+	width: 80px;
+}
+
+#next-up .t-hours {
+	width: 90px;
+}
+
+#next-up .t-minutes {
+	width: 104px;
+}
+
+#next-up .t-seconds {
+	width: 108px;
+}
+
+#upcoming-times-short-schedule h3 {
+	margin-bottom: 10px;
+}
+
+#upcoming-times-short-schedule .upcoming-events {
+	margin-bottom: 12px;
+}
+
+#upcoming-times-short-schedule .event-container {
+	margin-bottom: 1px;
+}
+
+#upcoming-times-short-schedule .time, #upcoming-times-short-schedule .date {
+	text-transform: uppercase;
+	background-color: #161e1c;
+	float: left;
+	padding: 5px;
+}
+
+#upcoming-times-short-schedule .time {
+	width: 60px;
+	text-align: right;
+}
+
+#upcoming-times-short-schedule .date {
+	width: 90px;
+	margin-right: 5px;
+	color: white;
+}
+
+#upcoming-times-short-schedule .title {
+	line-height: 29px;
+}
+
+#upcoming-times-short-schedule .view-full-schedule {
+	clear: both;
+}
+
+#upcoming-times-full-schedule {
+	position: absolute;
+	width: 430px;
+}
+
+#full-schedule {
+	position: relative;
+	padding: 10px;
+	background-color: #161e1c;
+}
+
+#full-schedule h3 {
+	color: white;
+}
+
+#full-schedule-days {
+	margin-top: 10px;
+}
+
+#full-schedule-days li {
+	color: #555;
+	text-transform: uppercase;
+	float: left;
+	width: 57px;
+}
+
+#full-schedule-days li a, #full-schedule-days li span {
+	text-decoration: none;
+	font-weight: bold;
+	width: 57px;
+	padding: 5px 0 5px 0;
+	text-align: center;
+	display: block;
+}
+
+#full-schedule-days li a.selectable {
+	color: white;
+}
+
+#full-schedule-list, #full-schedule-list-tab {
+	background-color: white;
+	padding: 10px;
+	overflow-y: auto;
+	position: relative;
+}
+
+#full-schedule #full-schedule-list, #full-schedule #full-schedule-list-tab {
+	height: 150px;
+}
+
+#full-schedule-list .day-heading, #full-schedule-list-tab .day-heading {
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+#full-schedule-list .separator, #full-schedule-list-tab .separator {
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+	margin-top: 10px;
+	clear: both;
+}
+
+#full-schedule-list ul, #full-schedule-list-tab ul {
+	padding: 0;
+}
+
+#full-schedule-list li, #full-schedule-list-tab li {
+	color: #555;
+	display: block;
+}
+
+#full-schedule-list li {
+	clear: both;
+	margin: 2px 0px;
+}
+
+#full-schedule-list li .bttn, #full-schedule-list-tab li .bttn {
+	padding: 0 4px;
+}
+
+#recent-conversation {
+	height: 142px;
+}
+
+#recent-conversation .entry-title {
+	font-size: 1.5em;
+}
+
+#recent-conversation a {
+	text-decoration: none;
+}
+
+#recent-conversation-content {
+	height: 114px;
+	overflow: hidden;
+}
+
+#slides-container {
+	color: #333;
+	width: 480px;
+	height: 120px;
+	overflow: hidden;
+	background: #fff;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+}
+
+/* Reset slide styles */
+#slides-container h1 {
+	color: #333 !important;
+	text-shadow: none !important;
+}
+
+#slides-container h2 {
+	color: #333 !important;
+	text-shadow: none !important;
+	font-size: 1.6em;
+}
+
+#slides-container h3 {
+	color: #333 !important;
+	text-shadow: none !important;
+}
+
+#slides-container strong, #slides-container b {
+	color: black;
+}
+
+#slides-container i, #slides-container em {
+	color: black;
+}
+
+#slides-container ul {
+	color: black;
+}
+
+#slides-container li {
+	color: black;
+	list-style: disc;
+}
+
+#slides-container a {
+}
+
+/* END: Reset slide styles */
+#slide-header {
+	height: 23px;
+	line-height: 23px;
+	margin: 10px;
+}
+
+#slide-title {
+	float: left;
+	font-size: 14px;
+	color: #373737;
+	width: 335px;
+	height: 20px;
+	overflow: hidden font-weight:bold;
+}
+
+#hands {
+	height: 80px;
+	padding: 20px 20px 20px 132px;
+	background: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/bg-hand.jpg) no-repeat;
+}
+
+#hands p {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 40px;
+	color: #3e4443;
+}
+
+ul.split-col {
+	padding: 5px 0;
+	margin: 5px 0;
+	overflow: hidden;
+}
+
+ul.split-col li {
+	float: left;
+	display: inline;
+	width: 40%;
+	padding: 0 0 0 10%;
+}
+
+ul.split-col li p {
+	padding: 0 0 .25em;
+}
+
+ul.split-col ul.sharing-options {
+	float: left;
+	clear: both;
+	padding: 0;
+}
+
+ul.split-col ul.sharing-options li {
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	margin-right: 10px;
+}
+
+.icon-facebook {
+	display: block;
+	width: 25px;
+	height: 25px;
+	text-indent: -999em;
+	overflow: hidden;
+	background: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/icon-facebook.png) no-repeat;
+}
+
+.icon-twitter {
+	display: block;
+	width: 25px;
+	height: 25px;
+	text-indent: -999em;
+	overflow: hidden;
+	background: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/icon-twitter.png) no-repeat;
+}
+
+.icon-email {
+	display: block;
+	width: 25px;
+	height: 25px;
+	text-indent: -999em;
+	overflow: hidden;
+	background: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/icon-email.png) no-repeat;
+}
+
+#sidebar {
+	float: right;
+	display: inline;
+	width: 470px;
+	margin-top: 50px;
+}
+
+aside#sidebar {
+	padding-top: 41px;
+}
+
+#watch, #sidebar, #chat .interface {
+	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	margin-bottom: -1px;
+}
+
+.tabs {
+	height: 50px;
+	overflow: hidden;
+	position: relative;
+}
+
+.tabs ul {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 10000px;
+}
+
+.tabs ul li {
+	float: left;
+	display: inline;
+}
+
+.tabs ul li a, .tabs a.more, .tabs a.less {
+	padding: 8px 15px 6px;
+	margin-right: 3px;
+	font-size: 14px;
+	line-height: 14px;
+	height: 16px;
+	text-decoration: none;
+	background: #161e1c;
+	color: white !important;
+}
+
+.tabs ul li a {
+	float: left;
+	overflow: hidden;
+}
+
+.tabs ul li.here a {
+	color: #fff !important;
+	background: rgba(22, 30, 28, .7);
+}
+
+.tabs ul li a:hover, .tabs a.more:hover, .tabs a.less:hover {
+	background: #161e1c;
+	padding: 7px 14px 5px;
+	border: 1px solid #161e1c;
+}
+
+.tabs ul li.here a:hover {
+	color: #fff !important;
+	border: 0;
+	padding: 8px 15px 6px;
+	background: rgba(22, 30, 28, .7);
+}
+
+.tabs a.more, .tabs a.less {
+	position: absolute;
+	bottom: 0;
+	margin-right: 0;
+	padding: 5px 10px 9px;
+	font-size: 24px;
+}
+
+.tabs a.more:hover, .tabs a.less:hover {
+	padding: 4px 9px 8px;
+}
+
+.tabs a.more {
+	right: 0;
+	display: none;
+}
+
+.tabs a.less {
+	left: 0;
+	display: none;
+}
+
+#chat .interface .tab-times {
+	padding-top: 40px;
+}
+
+#timezone-picker {
+	position: absolute;
+	right: 0;
+	margin-top: 50px;
+}
+
+#controls {
+	width: 420px;
+	height: 20px;
+	padding: 10px 0 10px 50px;
+	background: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/bg-map.gif) no-repeat #161e1c;
+	color: #fff;
+	line-height: 20px;
+}
+
+#controls span {
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+span.left {
+	margin-left: 10px;
+}
+
+span.right {
+	margin-right: 10px;
+}
+
+#chat, #volunteer-overlay {
+	float: right;
+	display: inline;
+	width: 470px;
+	position: relative;
+}
+
+#chat .interface {
+	height: 499px;
+}
+
+#chat .chat-window {
+	height: 432px;
+	position: relative;
+}
+
+.chat-contents {
+  position: relative;
+}
+
+#chat div.interface div.content {
+	background: white;
+	color: #555 !important;
+	height: 100%;
+}
+
+#chat div.interface div.content strong {
+	color: #555;
+}
+
+#content #nick-input.message {
+  display: block;
+  width: 280px;
+  color: #293330;
+  margin: 20% auto 0 auto;
+}
+
+#content #nick-input p {
+  margin-top: 10px;
+}
+
+input#chat-nickname {
+  width: 276px;
+  margin: 10px 0 4px 0;
+}
+
+div#chat-nickname-buttons {
+  margin: 4px 0 6px 0;
+}
+
+a.enter-nickname-bttn {
+  display: inline-block;
+  width: 446px;
+  text-align: center;
+}
+
+div#chat-nickname-buttons div.right {
+  float: right;
+}
+
+.lang {
+	float: right;
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 10px;
+	margin: 6px 0 0;
+	padding: 0;
+}
+
+.mute {
+	float: left;
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 10px;
+	margin: 6px 0 0;
+	padding: 0 0 0 18px;
+	background: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/icon-mute.png) no-repeat 0 0;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.email-field {
+	padding: 0 10px 4px !important;
+}
+
+.email-field input {
+	border: 1px solid #ccc;
+	background: #fff;
+	margin-right: 10px;
+}
+
+.email-field .bttn {
+	padding: 2px;
+	border: 1px solid #ccc;
+	color: black !important;
+}
+
+#footer {
+	clear: both;
+	overflow: hidden;
+	padding: 20px 0;
+	font-size: 11px;
+}
+
+#footer .links {
+	text-transform: uppercase;
+	margin: 0 0 10px;
+}
+
+#footer .links ul {
+}
+
+#footer .links li {
+	float: left;
+	font-size: 1.2em;
+}
+
+#footer .links ul li a {
+	color: #495250; /* footer link color 2 */
+}
+
+#footer .pages ul {
+	float: right;
+}
+
+#footer .pages li {
+	float: right;
+	display: inline;
+	margin-left: 20px;
+}
+
+#footer .column {
+	float: left;
+	color: #676767; /* footer text color */
+}
+
+.column a {
+	text-decoration: none;
+}
+
+#footer .column p {
+	font-size: 1.1em;
+	margin: 0 0 .5em;
+}
+
+#footer .column ul {
+}
+
+#footer .column ul li {
+	margin: 0 0 1.25em;
+}
+
+#footer .column ul li cite {
+	font-size: 9px;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #495250; /* footer link color */
+}
+
+#tweets, #blog-posts {
+	margin-right: 10px;
+	width: 400px;
+}
+
+#donations.column {
+	width: 123px;
+	float: right;
+}
+
+#tweets ul li cite a {
+	text-decoration: none;
+	color: #676767; /* footer text color */
+}
+
+#tweets ul li cite a.author {
+	color: #a9a9a9; /* interface text color 1 */
+}
+
+#view-more, #view-less {
+	text-transform: uppercase;
+}
+
+#view-more small, #view-less small {
+	margin-right: 5px;
+}
+
+#copyright {
+	overflow: hidden;
+	clear: both;
+	margin: 1em 0 0;
+	padding: 1em 0 0;
+	border-top: 1px solid #3d4543;
+}
+
+#copyright p {
+	color: #676767;
+	clear: both;
+}
+
+#copyright p a {
+	color: white;
+}
+
+#overlay, #chat-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5); /* FF3+, Saf3+, Opera 10.10+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#50000000',endColorstr='#50000000'); /* IE6,IE7 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#50000000',endColorstr='#50000000')"; /* IE8 */
+	z-index: 30;
+}
+
+#overlay label, #overlay small {
+	font-size: 12px;
+}
+
+#overlay label {
+	display: block;
+}
+
+#overlay input, #overlay textarea {
+	margin: 0;
+}
+
+#overlay input[type=text], #overlay textarea {
+	width: 100%;
+}
+
+#overlay .form-row {
+	margin: 0px 5px 10px 0px;
+}
+
+#share, #signup, #launch-live-prayer, #launch-live-help {
+    width: 340px;
+    margin: 160px auto;
+    border: 5px solid #2d3432;
+    position: relative;
+	padding: 20px;
+    background: #161E1C;
+}
+
+#share h2, #share h3, #signup h2, #signup h3, #launch-live-prayer h2, #launch-live-prayer h3, #launch-live-help h2, #launch-live-help h3 {
+    color: white;
+	margin-bottom: 20px;
+}
+
+#live-prayer-buttons, #live-help-buttons {
+  float: right;
+  text-align: right;
+}
+
+div#launch-live-prayer label, div#launch-live-help label {
+  display: inline;
+}
+
+div#launch-live-prayer p, div#launch-live-prayer input, div#launch-live-help p, div#launch-live-help input {
+  margin-bottom: 10px;
+}
+
+#live-prayer-setting-nickname, #setting-nickname, #live-help-setting-nickname {
+  float: left;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+
+
+.close-x {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -999em;
+    background: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/close-x.png) no-repeat;
+}
+
+.glyph {
+    font-family: "Tahoma", sans-serif;
+    text-decoration: none;
+    font-weight: normal !important;
+    font-style: normal;
+    font-variant: none;
+}
+
+#location_map {
+	display: block;
+	margin: 33px auto 0;
+	border: 1px solid #ddd;
+}
+
+#location_data {
+	text-align: center;
+}
+
+#location_data p {
+	font-size: 11px;
+	color: #999;
+	margin: 0 33px;
+	line-height: 14px;
+	margin-top: 10px;
+}
+
+#location_data ul {
+	margin: 33px;
+	padding: 0;
+}
+
+#location_data li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+#no-events-message {
+	margin: 100px auto;
+	width: 400px;
+	background: #222;
+	padding: 50px;
+}
+
+#no-events-message h1 {
+	color: white;
+}
+
+#no-events-message .message-content {
+	font-size: 24px;
+	line-height: 30px;
+	margin: 20px 0pt;
+	color: #bbb;
+}
+
+.send-bttn, .nick-bttn {
+	text-align: center;
+}
+
+.send-bttn {
+	width: 65px;
+}
+
+.nick-bttn {
+	width: 170px;
+}
+
+.chat-window {
+	background: #fff;
+	border: #d5dfca solid 1px;
+	overflow: auto;
+}
+
+.chat-window ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.chat-window ul li {
+	color: #2c2d2d;
+	line-height: 1.5em;
+	padding: .25em 13px;
+	margin: 0;
+	border-bottom: 1px solid #dedede;
+	word-wrap: break-word;
+}
+
+.chat-window ul li.system {
+	background: LightYellow;
+}
+
+.chat-window ul li.even {
+	background: #eaf1f8;
+}
+
+.chat-window ul li.moderator {
+	background: #e0ebd5;
+	border-bottom: #d5dfca solid 1px;
+}
+
+.author {
+	font-weight: bold;
+}
+
+.moderator .author {
+	color: #2c5400;
+}
+
+.chat-window ul li em {
+	color: #7e92a8;
+	font-style: italic;
+}
+
+.chat-window {
+	clear: both;
+}
+
+.chat-input {
+	padding: 6px 0 0;
+	height: 31px;
+}
+
+.chat-input .nick div {
+	margin: 6px 196px 6px 6px;
+}
+
+.chat-input .chat div {
+	margin: 6px 90px 6px 6px;
+}
+
+.chat-input .nick div input, .chat-input .chat div input {
+	margin: -6px;
+	width: 100%;
+}
+
+.chat-input .nick a, .chat-input .chat a {
+	float: right;
+	margin-top: -6px;
+}
+
+.chat-input input.styled, .global-message-input input.styled {
+	float: left;
+	display: inline;
+	border: 1px solid #D5DFCA;
+	width: 240px;
+	padding: 6px;
+	width: 258px;
+	height: 17px;
+}
+
+.chat-input input.phrase, .global-message-input input.phrase {
+	width: 362px;
+}
+
+.chat-language {
+	margin: 0px 0px 6px;
+	text-align: right;
+	float: right;
+}
+
+.chat-nick {
+	margin: 0px 0px 6px;
+	float: left;
+}
+
+.chat_Host {
+	font-size: .8em;
+	font-weight: normal;
+	border: solid 1px #ddd;
+	padding: 1px;
+}
+
+/* volunteer screen */
+#volunteer-bar {
+	width: 100%;
+	height: 40px;
+	background: black;
+	font-size: 0.75em;
+	position: fixed;
+	z-index: 25;
+}
+
+#volunteer-bar .title {
+	color: #f97f00;
+	text-transform: uppercase;
+	line-height: 40px;
+}
+
+#volunteer-bar .icon {
+	width: 17px;
+	height: 14px;
+	display: inline-block;
+	margin: 12px 5px -2px;
+}
+
+#volunteer-bar .icon.alert {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-alert-white.png);
+}
+
+#volunteer-bar .here .icon.alert {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-alert-black.png);
+}
+
+#volunteer-bar .icon.chat {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-chat-white.png);
+}
+
+#volunteer-bar .here .icon.chat {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-chat-black.png);
+}
+
+#volunteer-bar .icon.info {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-info-white.png);
+}
+
+#volunteer-bar .here .icon.info {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-info-black.png);
+}
+
+#volunteer-bar .icon.slides {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-slides-white.png);
+}
+
+#volunteer-bar .here .icon.slides {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-slides-black.png);
+}
+
+#volunteer-bar .icon.users {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-users-white.png);
+}
+
+#volunteer-bar .here .icon.users {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-users-black.png);
+}
+
+#volunteer-bar .icon.settings {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-settings-white.png);
+	width: 16px;
+	height: 16px;
+	margin-top: 10px;
+}
+
+#volunteer-bar .here .icon.settings {
+	background-image: url(/web/20101228233438im_/http://westside-family.churchonline.org/img/volunteer/icon-settings-black.png);
+}
+
+#volunteer-overlay .chat-inner .links {
+	float: right;
+	margin: 0 0 5px 10px;
+}
+
+#volunteer-overlay {
+	position: absolute;
+	top: 0;
+	right: -5px;
+	width: 480px;
+	z-index: 11;
+}
+
+#volunteer-overlay .tabbed a {
+	color: white;
+}
+
+#volunteer-overlay a {
+	color: black;
+}
+
+#volunteer-overlay .chat-inner, #volunteer-overlay .alerts-inner, #volunteer-overlay .live_count-inner, #volunteer-overlay .slides-inner, #volunteer-overlay .settings-inner, #volunteer-overlay .extra_info-inner {
+	padding: 6px 6px 0;
+	background: #fff;
+	overflow: auto;
+	color: black;
+	border: 5px solid #f97f00;
+	position: absolute;
+	z-index: -1;
+}
+
+#volunteer-overlay .chat-inner, #volunteer-overlay .slides-inner, #volunteer-overlay .alerts-inner, #volunteer-overlay .extra_info-inner {
+	height: 609px;
+	width: 458px;
+}
+
+#volunteer-overlay .live_count-inner {
+	left: 0;
+}
+
+#volunteer-overlay .settings-inner {
+	right: 0;
+}
+
+#volunteer-overlay .live_count-inner ul, #volunteer-overlay .settings-inner ul {
+	padding: 0;
+	margin: 10px 5px 0px;
+}
+
+#volunteer-overlay .live_count-inner li, #volunteer-overlay .settings-inner li {
+	display: block;
+	margin: 5px 0px;
+}
+
+#volunteer-overlay .live_count-inner .current_container {
+	float: left;
+	width: 100px;
+	padding-right: 10px;
+	border-right: 1px solid black;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#volunteer-overlay .live_count-inner .total_container {
+	float: right;
+	width: 100px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+#volunteer-overlay h2 {
+	font-weight: normal;
+	margin: 10px 5px 5px 5px;
+}
+
+#volunteer-overlay .chat-window {
+	height: 479px;
+}
+
+#volunteer-bar ul.tabbed {
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+	background-color: black;
+	color: white;
+	margin: 0;
+}
+
+#volunteer-overlay ul.tabbed li {
+	float: left;
+	display: inline;
+	padding: 0 15px;
+	height: 40px;
+}
+
+#volunteer-overlay ul.tabbed li.here {
+	background-color: white;
+	border: 5px solid #f97f00;
+	border-bottom: none;
+}
+
+#volunteer-overlay ul.tabbed li.right {
+	float: right;
+}
+
+#volunteer-overlay ul.tabbed li a {
+	text-decoration: none;
+}
+
+#volunteer-overlay ul.tabbed li.here a {
+	color: black;
+	display: block;
+	margin: -5px -5px 0;
+	border-bottom: 5px solid white;
+}
+
+#volunteer-overlay .slides-inner .slides, #volunteer-overlay .alerts-inner .alerts {
+	border-bottom: 1px solid #dedede;
+}
+
+#volunteer-overlay .slides-inner .slide_item, #volunteer-overlay .alerts-inner .alert_item {
+	padding: .5em;
+	border: 1px solid #dedede;
+	border-width: 1px 1px 0;
+	/*			background:#eaeaea;*/
+	font-size: .9em;
+	overflow: hidden;
+}
+
+#volunteer-overlay .slide_item.current {
+	background-color: #FFC;
+}
+
+#volunteer-overlay .alerts-inner .alert_item a.bttn {
+	float: right;
+	padding: 2px 6px;
+}
+
+#chat .chat-tools span {
+	background: #d8d8d8;
+	margin-right: .5em;
+	padding: 2px 4px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#volunteer-overlay .public-room-list {
+	padding: 5px;
+	text-align: right;
+}
+
+#volunteer-overlay .public-room-list div {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+/* slide tab */
+#slide-controls {
+	background: #E8E8E8;
+	border: 1px solid #DADADA;
+	font-size: 12px;
+	margin: 4px 0px 6px;
+	padding: 3px;
+}
+
+#cs_channel_slides table {
+	width: 100%;
+}
+
+#cs_channel_slides table td {
+	padding: 5px;
+}
+
+.auto-slide-push-status {
+	font-weight: bold;
+}
+
+/*
+     FILE ARCHIVED ON 23:34:38 Dec 28, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:22:39 Mar 07, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.703
+  exclusion.robots: 0.023
+  exclusion.robots.policy: 0.01
+  esindex: 0.014
+  cdx.remote: 11.482
+  LoadShardBlock: 187.07 (3)
+  PetaboxLoader3.datanode: 210.326 (4)
+  PetaboxLoader3.resolve: 115.178 (2)
+  load_resource: 188.389
+*/
